@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Option C — three columns side by side on desktop, stacked on mobile. One screen, everything visible. -->
+<head>
+  <meta charset="utf-8">
+  <title>Andrii Rudavko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.5;
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+    h1 { margin: 0; }
+    .tagline { font-style: italic; color: #555; margin-top: .25rem; }
+    .cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #888;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: .3rem;
+      margin: 0 0 .75rem;
+    }
+    a { color: #337ab7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .domains p { margin: .15rem 0; }
+    .domains span { font-style: italic; color: #555; }
+    @media (max-width: 640px) {
+      .cols { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Andrii Rudavko</h1>
+    <p class="tagline">Sand whisperer.</p>
+  </header>
+
+  <div class="cols">
+    <section id="about">
+      <h2>About me</h2>
+      <p>Making computers do what people want since 2001. Now I consult people on how to make computers do what other people want.</p>
+      <div class="domains">
+        <span>Technology domains:</span>
+        <p>AI SDLC</p>
+        <p>ADLC (agentic development lifecycle)</p>
+        <p>AX (agentic experience)</p>
+        <p>data</p>
+      </div>
+      <div class="domains">
+        <span>Business domains:</span>
+        <p>healthcare</p>
+      </div>
+    </section>
+
+    <section id="reach">
+      <h2>Reach out</h2>
+      <p><a href="mailto:andrii@rudavko.com">andrii@rudavko.com</a></p>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <p><a href="/blog1/01-the-joy-of-writing-in.html">On The Joy of Writing in HTML</a></p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Option B — sticky top nav with anchor links to the three sections. Good when the page grows (more blog posts). -->
+<head>
+  <meta charset="utf-8">
+  <title>Andrii Rudavko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.5;
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #f2f2f2;
+      border-bottom: 1px solid #ddd;
+      padding: .9rem 0;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      font-size: .95rem;
+    }
+    a { color: #337ab7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { margin: 1.5rem 0 0; }
+    h2 { margin: 2.5rem 0 .5rem; }
+    .tagline { font-style: italic; color: #555; }
+    .domains p { margin: .15rem 0; }
+    .domains span { font-style: italic; color: #555; }
+    section { scroll-margin-top: 3.5rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#reach">Reach out</a>
+    <a href="#blog">Blog</a>
+  </nav>
+
+  <header>
+    <h1>Andrii Rudavko</h1>
+    <p class="tagline">Sand whisperer.</p>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Making computers do what people want since 2001. Now I consult people on how to make computers do what other people want.</p>
+    <div class="domains">
+      <span>Technology domains:</span>
+      <p>AI SDLC</p>
+      <p>ADLC (agentic development lifecycle)</p>
+      <p>AX (agentic experience)</p>
+      <p>data</p>
+    </div>
+    <div class="domains">
+      <span>Business domains:</span>
+      <p>healthcare</p>
+    </div>
+  </section>
+
+  <section id="reach">
+    <h2>Reach out</h2>
+    <p><a href="mailto:andrii@rudavko.com">andrii@rudavko.com</a></p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <p><a href="/blog1/01-the-joy-of-writing-in.html">On The Joy of Writing in HTML</a></p>
+  </section>
+</body>
+</html>
